@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__background"></div>
-      <div class=" header__logo logo">
+      <div class="header__logo logo">
         <span>Bakerlab</span>
         <div class="burger header__burger">
           <span class="burger__line"></span>
@@ -53,12 +53,12 @@
             </a>
           </li>
           <li class="side-info__item">
-            <a class="small-button" href="#">
+            <a class="small-button popup-button" href="#">
               Call back
             </a>
           </li>
           <li class="side-info__item">
-            <select 
+            <select
               class="side-info__select"
               id="lang"
               name="lang"
@@ -83,7 +83,7 @@
         <h4 class="main-info__second-title">
           We bake your fantasies: croissants cakes, cookies, and cupcakes.
         </h4>
-        <a class="main-info__button big-button" href="#">
+        <a class="main-info__button big-button" href="#about">
           Lern more
         </a>
       </div>
@@ -425,7 +425,7 @@
             </h4>
             <form
               class="feedback__form"
-              action="#"
+              action="https://formspree.io/mdowynvj"
               method="POST"
             >
               <input
@@ -516,6 +516,41 @@
         </a>
       </div>
     </footer>
+    <!-- Popup -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <form
+          action="https://formspree.io/mdowynvj"
+          method="POST"
+          class="popup__form"
+        >
+          <h4>
+            We will call you back
+          </h4>
+          <div class="popup__label">
+            <label>
+              <input
+                class="main-input"
+                type="tel"
+                name="_phone"
+                placeholder="Phone number"
+              >
+            </label>
+            <label>
+              <input
+                class="main-input"
+                type="text" name="_name"
+                placeholder="Name"
+              >
+            </label>
+          </div>
+          <div class="popup__button">
+            <button class="big-button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="https://kit.fontawesome.com/fbd2e65cde.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
